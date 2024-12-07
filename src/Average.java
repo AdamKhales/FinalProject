@@ -20,14 +20,14 @@ public class Average {
         for (int i = 0; i < data.length; i++) {
             sum += data[i];
         }
-        mean = (double) sum / data.length;
+        mean = sum / data.length;
 
     }
 
     public void selectionSort() {
         Arrays.sort(data);
         int[] temp = new int[5];
-        for (int i = 0; i < data.length ; i++) {
+        for (int i = 0; i < data.length; i++) {
             temp[i] = data[4-i];
         }
         data = temp;
