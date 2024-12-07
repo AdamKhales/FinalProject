@@ -26,12 +26,11 @@ public class Average {
 
     public void selectionSort() {
         Arrays.sort(data);
+        int[] temp = new int[5];
         for (int i = 0; i < data.length ; i++) {
-            int temp = data[4];
-            data[4] = data[i];
-            data[i] = temp;
-
+            temp[i] = data[4-i];
         }
+        data = temp;
     }
 
     public String toString() {
