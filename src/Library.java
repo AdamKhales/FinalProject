@@ -42,4 +42,16 @@ public class Library {
     public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
+    public void addBook(Book book) {
+        books.add(book);
+    }
+    public void removeBook(Book book) {
+        books.remove(book);
+    }
+    public Book getBook(int index) {
+        return books.get(index);
+    }
+    public void setBook(int index, Book book) {
+        books.set(index, book);
+    }
 }
